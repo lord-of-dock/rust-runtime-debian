@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.73.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.72.1...v1.73.0) (2023-12-29)
+
+### ✨ Features
+
+* image rust:1.73.0 ([030629f4](https://github.com/lord-of-dock/rust-runtime-debian/commit/030629f4c405576fcf8baf706bcf3dacbee08c40)), feat [#6](https://github.com/lord-of-dock/rust-runtime-debian/issues/6)
+
+* image rust:1.72.1 ([0fa29dab](https://github.com/lord-of-dock/rust-runtime-debian/commit/0fa29dab55683e29c0ead583066a6ff073fb5133)), feat [#5](https://github.com/lord-of-dock/rust-runtime-debian/issues/5)
+
+* update version 0.1.5 cargo-bak ([69998aa7](https://github.com/lord-of-dock/rust-runtime-debian/commit/69998aa7f8b9ebb0e5795393d298deb3a892826a))
+
+* image rust:1.71.1 ([fd06fbb4](https://github.com/lord-of-dock/rust-runtime-debian/commit/fd06fbb4f05f70da9076185a4be8bf71a70ff880)), feat [#4](https://github.com/lord-of-dock/rust-runtime-debian/issues/4)
+
+* mark rust version 1.70.0 ([67638666](https://github.com/lord-of-dock/rust-runtime-debian/commit/676386669fefa3c76864482dde1401c0b3b72400))
+
+* rust version 1.70.0 to support image platforms ([51e8e1a5](https://github.com/lord-of-dock/rust-runtime-debian/commit/51e8e1a54e13c0044163ef05e511b693b84f2aec))
+
 ## [1.72.1](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.71.1...v1.72.1) (2023-12-29)
 
 ### ✨ Features
