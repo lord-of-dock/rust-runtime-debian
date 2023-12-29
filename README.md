@@ -45,6 +45,13 @@ docker run --rm \
   rustc --version
 ```
 
+### kit version
+
+| image version | cargo-bak |
+| ------------- | --------- |
+| 1.72.1+       | 0.1.5     |
+| 1.70.0        | 0.1.4     |
+
 ## source repo
 
 [https://github.com/lord-of-dock/rust-runtime-debian](https://github.com/lord-of-dock/rust-runtime-debian)
