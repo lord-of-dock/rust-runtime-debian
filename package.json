@@ -1,6 +1,6 @@
 {
   "name": "rust-runtime-debian",
-  "version": "1.74.1",
+  "version": "1.75.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lord-of-dock/rust-runtime-debian.git"

@@ -53,7 +53,7 @@ docker run --rm \
 
 ### each version
 
-- rust version `1.74.1`
+- rust version `1.75.0`
   - change in `Makefile`
   - change in `Dockerfile` or `build.dockerfile`
 
