@@ -51,15 +51,11 @@ docker run --rm \
 
 ## source usage
 
-### todo-list
+### each version
 
-- rename `lord-of-dock/rust-runtime-debian` to new github url
-- rename docker hub user `sinlov` to new org or user
-- rename docker hub `rust-runtime-debian` to new docker image name
-- add [secrets](https://github.com/lord-of-dock/rust-runtime-debian/settings/secrets/actions) `New repository secret` name `DOCKERHUB_TOKEN` from [hub.docker](https://hub.docker.com/settings/security)
-- change `DOCKER_IMAGE_PLATFORMS: linux/amd64,linux/arm64/v8` to your need [docker buildx](https://docs.docker.com/buildx/working-with-buildx/)
-  - also change `jobs.docker-image-buildx.strategy.matrix.docker_image.[platform]` same as `DOCKER_IMAGE_PLATFORMS`
-- change `push_remote_flag: ${{ github.event.pull_request.merged == true }}` to let latest tag push to docker hub
+- rust version `1.70.0`
+  - change in `Makefile`
+  - change in `Dockerfile` or `build.dockerfile`
 
 ### dev mode
 
