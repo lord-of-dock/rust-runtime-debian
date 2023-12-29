@@ -49,7 +49,6 @@ jobs:
       docker_image_name: 'sinlov/rust-runtime-debian'
       build_branch_name: 'main'
       push_remote_flag: ${{ github.event.pull_request.merged == true }}
-      # push_remote_flag: ${{ github.ref == 'refs/heads/main' }}
 
   docker-image-tag:
     name: docker-image-tag
