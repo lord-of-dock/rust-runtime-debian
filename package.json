@@ -1,0 +1,20 @@
+{
+  "name": "rust-runtime-debian",
+  "version": "0.3.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lord-of-dock/rust-runtime-debian.git"
+  },
+  "keywords": [
+    "alpine",
+    "make",
+    "docker",
+    "action"
+  ],
+  "author": "sinlov",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lord-of-dock/rust-runtime-debian/issues"
+  },
+  "homepage": "https://github.com/lord-of-dock/rust-runtime-debian#readme"
+}
