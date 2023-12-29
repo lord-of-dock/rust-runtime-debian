@@ -37,6 +37,6 @@ RUN export CARGO_HTTP_DEBUG=true \
   rustup component add rls && \
   rustup component add rust-analysis && \
   rustup component add rust-src && \
-  cargo install --all-features --version 0.1.4 cargo-bak && \
+  cargo install --all-features --version 0.1.5 cargo-bak && \
   rm -rf ${CARGO_HOME}/registry && \
   rm -f ${CARGO_HOME}/.package-cache ${CARGO_HOME}/.crates2.json ${CARGO_HOME}/.crates.toml
