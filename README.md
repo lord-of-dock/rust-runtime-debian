@@ -14,8 +14,8 @@
 
 ## for
 
-- rust build in docker with buster
-- [![](https://img.shields.io/docker/v/_/rust/buster?label=rust&logo=rust&style=social)](https://hub.docker.com/_/rust/tags?page=1&name=buster) latest semver version with `buster`
+- rust build in docker with latest
+- [![](https://img.shields.io/docker/v/_/rust/latest?label=rust&logo=rust&style=social)](https://hub.docker.com/_/rust/tags) latest semver version with `latest`
 - install component
   - [rustfmt](https://github.com/rust-lang/rustfmt)
   - [clippy](https://doc.rust-lang.org/clippy/)
@@ -24,6 +24,8 @@
   - [rust-src](https://github.com/rust-lang/rust)
 - install tools
   - [cargo-bak](https://crates.io/crates/cargo-bak) above 1.70.0
+    - `cargo-bak 0.1.5` after `rust 1.75.0`
+    - `cargo-bak 0.1.4` must use after `rust 1.74.0`
 
 ### waring
 
@@ -49,7 +51,7 @@ docker run --rm \
 
 | image version | cargo-bak |
 | ------------- | --------- |
-| 1.72.1+       | 0.1.5     |
+| 1.75.0+       | 0.1.5     |
 | 1.70.0        | 0.1.4     |
 
 ## source repo
