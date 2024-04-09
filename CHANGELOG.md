@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.76.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.75.0...v1.76.0) (2024-04-10)
+
+### ✨ Features
+
+* rust version to 1.76.0 ([fb01146f](https://github.com/lord-of-dock/rust-runtime-debian/commit/fb01146fc9e6a6409b84644684c580b1cf1038d8))
+
+* update full build pipline ([63487304](https://github.com/lord-of-dock/rust-runtime-debian/commit/634873044881441a0c211acec646d1b106ec7b93))
+
 ## [1.75.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.74.1...v1.75.0) (2023-12-29)
 
 ### ✨ Features
