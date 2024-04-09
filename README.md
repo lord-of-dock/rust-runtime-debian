@@ -64,9 +64,11 @@ docker run --rm \
 
 ### each version
 
-- rust version `1.76.0`
+- rust version `1.77.0`
   - change in `Makefile`
   - change in `Dockerfile` or `build.dockerfile`
+
+release log at: [https://blog.rust-lang.org/](https://blog.rust-lang.org/)
 
 ### dev mode
 
