@@ -8,7 +8,7 @@ ROOT_NAME =rust-runtime-debian
 
 # MakeImage.mk settings start
 ROOT_OWNER =sinlov
-ROOT_PARENT_SWITCH_TAG :=1.76.0
+ROOT_PARENT_SWITCH_TAG :=1.77.0
 # for image local build
 INFO_TEST_BUILD_DOCKER_PARENT_IMAGE =rust
 INFO_BUILD_DOCKER_FILE =Dockerfile

@@ -7,7 +7,14 @@ on:
     branches:
       - 'main'
       - 'release-*'
-      - 'hotfix-*'
+      - 'FE-*'
+      - '*-feature-*'
+      - 'BF-*'
+      - '*-bug-*'
+      - 'PU-*'
+      - 'DOC-*'
+      - '*-documentation-*'
+      - '*-hotfix-*'
     tags:
       - '*' # Push events to matching *, i.e. 1.0.0 v1.0, v20.15.10
   pull_request:
@@ -17,15 +24,11 @@ on:
       - opened
       - reopened
       - closed
-    branches:
-      - 'main'
-      - 'release-*'
-      - 'iteration-*'
-      - 'FE-*'
-      - 'BF-*'
-      - 'PU-*'
-      - 'DOC-*'
-      - 'hotfix-*'
+    # branches:
+    #   - 'main'
+    #   - 'release-*'
+    #   - 'DOC-*'
+    #   - 'hotfix-*'
 
 permissions:
   contents: write
@@ -42,11 +45,10 @@ jobs:
     needs:
       - version
     uses: ./.github/workflows/docker-image-latest.yml
-    if: ${{ ( github.event_name == 'push' && github.ref == 'refs/heads/main' ) || ( github.base_ref == 'main' && github.event.pull_request.merged == true ) }}
     with:
       # build_branch_name: 'main'
-      push_remote_flag: ${{ github.ref == 'refs/heads/main' }}
-      # push_remote_flag: ${{ github.event.pull_request.merged == true }}
+      # push_remote_flag: ${{ github.ref == 'refs/heads/main' }}
+      push_remote_flag: ${{ ( github.event_name == 'push' && github.ref == 'refs/heads/main' ) || ( github.base_ref == 'main' && github.event.pull_request.merged == true ) }}
     secrets:
       DOCKERHUB_OWNER: "${{ secrets.DOCKERHUB_OWNER }}"
       DOCKERHUB_REPO_NAME: "${{ secrets.DOCKERHUB_REPO_NAME }}"
