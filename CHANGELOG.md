@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.77.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.76.0...v1.77.0) (2024-04-10)
+
+### ✨ Features
+
+* [rust version 1.77.0](https://blog.rust-lang.org/2024/03/21/Rust-1.77.0.html) ([56ae7bf9](https://github.com/lord-of-dock/rust-runtime-debian/commit/56ae7bf994edc7ebb83cd58b5faa5fbe21020006))
+
 ## [1.76.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.75.0...v1.76.0) (2024-04-10)
 
 ### ✨ Features
