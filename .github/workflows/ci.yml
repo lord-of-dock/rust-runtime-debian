@@ -30,9 +30,10 @@ on:
     #   - 'DOC-*'
     #   - 'hotfix-*'
 
-permissions:
+permissions: # https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#permissions
   contents: write
   discussions: write
+  packages: write
 
 jobs:
   version:
@@ -40,37 +41,33 @@ jobs:
     uses: ./.github/workflows/version.yml
     secrets: inherit
 
-  docker-image-latest:
-    name: docker-image-latest
+  docker-buildx-bake-hubdocker-latest:
+    name: docker-buildx-bake-hubdocker-latest
     needs:
       - version
-    uses: ./.github/workflows/docker-image-latest.yml
+    uses: ./.github/workflows/docker-buildx-bake-hubdocker-latest.yml
+    # if: ${{ ( github.event_name == 'push' && github.ref == 'refs/heads/main' ) || github.base_ref == 'main' }}
     with:
-      # build_branch_name: 'main'
       # push_remote_flag: ${{ github.ref == 'refs/heads/main' }}
-      push_remote_flag: ${{ ( github.event_name == 'push' && github.ref == 'refs/heads/main' ) || ( github.base_ref == 'main' && github.event.pull_request.merged == true ) }}
+      push_remote_flag: ${{ github.event.pull_request.merged == true }}
     secrets:
-      DOCKERHUB_OWNER: "${{ secrets.DOCKERHUB_OWNER }}"
-      DOCKERHUB_REPO_NAME: "${{ secrets.DOCKERHUB_REPO_NAME }}"
       DOCKERHUB_TOKEN: "${{ secrets.DOCKERHUB_TOKEN }}"
 
-  docker-image-tag:
-    name: docker-image-tag
+  docker-buildx-bake-hubdocker-tag:
+    name: docker-buildx-bake-hubdocker-tag
     needs:
       - version
-    uses: ./.github/workflows/docker-image-tag.yml
+    uses: ./.github/workflows/docker-buildx-bake-hubdocker-tag.yml
     if: startsWith(github.ref, 'refs/tags/')
     # with:
-      # push_remote_flag: false
+      # push_remote_flag: true # default is true
     secrets:
-      DOCKERHUB_OWNER: "${{ secrets.DOCKERHUB_OWNER }}"
-      DOCKERHUB_REPO_NAME: "${{ secrets.DOCKERHUB_REPO_NAME }}"
       DOCKERHUB_TOKEN: "${{ secrets.DOCKERHUB_TOKEN }}"
 
   deploy-tag:
     needs:
       - version
-      - docker-image-tag
+      - docker-buildx-bake-hubdocker-tag
     name: deploy-tag
     uses: ./.github/workflows/deploy-tag.yml
     if: startsWith(github.ref, 'refs/tags/')
