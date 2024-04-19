@@ -14,7 +14,7 @@
 
 ## for
 
-- rust build in docker with latest
+- rust build in docker with debian
 - [![](https://img.shields.io/docker/v/_/rust/latest?label=rust&logo=rust&style=social)](https://hub.docker.com/_/rust/tags) latest semver version with `latest`
 - install component
   - [rustfmt](https://github.com/rust-lang/rustfmt)
@@ -22,10 +22,13 @@
   - [rls](https://github.com/rust-lang/rls)
   - [rust-analysis](https://github.com/rust-lang/rust-analyzer)
   - [rust-src](https://github.com/rust-lang/rust)
-- install tools
-  - [cargo-bak](https://crates.io/crates/cargo-bak) above 1.70.0
-    - `cargo-bak 0.1.5` after `rust 1.75.0`
-    - `cargo-bak 0.1.4` must use after `rust 1.74.0`
+
+### build kit version
+
+| image version | [cargo-bak](https://crates.io/crates/cargo-bak) |
+| ------------- | --------- |
+| 1.75.0+       | 0.1.5     |
+| 1.74.0        | 0.1.4     |
 
 ### waring
 
@@ -34,25 +37,21 @@
 ### fast use
 
 ```bash
-# run as cli
+# run as cli show latest rust version
 docker run --rm \
   -it \
   --name "test-rust-runtime-debian" \
-  sinlov/rust-runtime-debian:latest
-
-# check rustc --version
-docker run --rm \
-  --name "test-rust-runtime-debian" \
   sinlov/rust-runtime-debian:latest \
   rustc --version
+
+# check 1.77.2 build env
+docker run --rm \
+  --name "test-rust-runtime-debian" \
+  sinlov/rust-runtime-debian:1.77.2 \
+  rustup show && \
+  uname -asrm && cat /etc/os-release && \
+  make --version && gcc --version
 ```
-
-### kit version
-
-| image version | cargo-bak |
-| ------------- | --------- |
-| 1.75.0+       | 0.1.5     |
-| 1.70.0        | 0.1.4     |
 
 # dev
 
