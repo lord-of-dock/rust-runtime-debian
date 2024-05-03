@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.78.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.77.2...v1.78.0) (2024-05-03)
+
+### ✨ Features
+
+* rust version to 1.78.0 ([f01f0f72](https://github.com/lord-of-dock/rust-runtime-debian/commit/f01f0f7245efccd13ba7c0316cff5bbdb2327e29)), feat [#23](https://github.com/lord-of-dock/rust-runtime-debian/issues/23)
+
+### 📝 Documentation
+
+* update fast use at README.md ([fb4b052f](https://github.com/lord-of-dock/rust-runtime-debian/commit/fb4b052f89063903dfc320bdba3b28e529253b34))
+
+* change usage of docker, add show env ([af6067cd](https://github.com/lord-of-dock/rust-runtime-debian/commit/af6067cdd5718911c2e62b62116dc547f56ebbbd))
+
+### 👷‍ Build System
+
+* bump convention-change/conventional-version-check ([3c20c3a7](https://github.com/lord-of-dock/rust-runtime-debian/commit/3c20c3a7a605017630558dbe8e9a89f89bf16f13))
+
 ## [1.77.2](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.77.1...v1.77.2) (2024-04-11)
 
 ### 👷‍ Build System
