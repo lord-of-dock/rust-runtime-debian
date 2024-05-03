@@ -42,15 +42,18 @@ docker run --rm \
   -it \
   --name "test-rust-runtime-debian" \
   sinlov/rust-runtime-debian:latest \
-  rustc --version
+  rustup show
 
 # check 1.78.0 build env
 docker run --rm \
   --name "test-rust-runtime-debian" \
   sinlov/rust-runtime-debian:1.78.0 \
-  rustup show && \
-  uname -asrm && cat /etc/os-release && \
-  make --version && gcc --version
+  bash -c ' \
+  uname -asrm && \
+  cat /etc/os-release && \
+  make --version && \
+  gcc --version && \
+  rustup show '
 ```
 
 # dev
