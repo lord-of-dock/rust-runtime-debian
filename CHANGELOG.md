@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.79.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.78.0...v1.79.0) (2024-07-04)
+
+### ✨ Features
+
+* basic verison to rust 1.79.0 ([40c98b88](https://github.com/lord-of-dock/rust-runtime-debian/commit/40c98b8843ac27656b0547884f2685b18428d99e)), fe [#26](https://github.com/lord-of-dock/rust-runtime-debian/issues/26)
+
+### 👷‍ Build System
+
+* bump docker/bake-action from 4 to 5 ([135c148a](https://github.com/lord-of-dock/rust-runtime-debian/commit/135c148a8406387704e56651701409a4a0907c66))
+
 ## [1.78.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.77.2...v1.78.0) (2024-05-03)
 
 ### ✨ Features
