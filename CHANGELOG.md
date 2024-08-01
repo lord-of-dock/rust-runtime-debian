@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.80.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.79.0...v1.80.0) (2024-08-02)
+
+### ✨ Features
+
+* update `rust` version to `1.80.0` ([6aa782c6](https://github.com/lord-of-dock/rust-runtime-debian/commit/6aa782c6c9d87748c8e4e47fdf43a78d5fb73da4)), feat [#28](https://github.com/lord-of-dock/rust-runtime-debian/issues/28)
+
 ## [1.79.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.78.0...v1.79.0) (2024-07-04)
 
 ### ✨ Features
