@@ -44,10 +44,10 @@ docker run --rm \
   sinlov/rust-runtime-debian:latest \
   rustup show
 
-# check 1.80.0 build env
+# check 1.80.1 build env
 docker run --rm \
   --name "test-rust-runtime-debian" \
-  sinlov/rust-runtime-debian:1.80.0 \
+  sinlov/rust-runtime-debian:1.80.1 \
   bash -c ' \
   uname -asrm && \
   cat /etc/os-release && \
@@ -66,7 +66,7 @@ docker run --rm \
 
 ### each version
 
-- rust version `1.80.0`
+- rust version `1.80.1`
   - change in `Makefile`
   - change in `Dockerfile` or `build.dockerfile`
 
