@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.80.1](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.80.0...v1.80.1) (2024-08-13)
+
+### 👷‍ Build System
+
+* optimize docker bake workflows for better artifact handling ([701d45e3](https://github.com/lord-of-dock/rust-runtime-debian/commit/701d45e3369e6128afb98b81307116f8e0807369))
+
+* reduce default timeout for docker bake action ([4d1a2964](https://github.com/lord-of-dock/rust-runtime-debian/commit/4d1a29644c25375f909679c80c2c0b0838d45940))
+
+* bump version to 1.80.1 ([86ecb7da](https://github.com/lord-of-dock/rust-runtime-debian/commit/86ecb7da1a7da880ea9d32a4841bb040c88955a7))
+
 ## [1.80.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.79.0...v1.80.0) (2024-08-02)
 
 ### ✨ Features
