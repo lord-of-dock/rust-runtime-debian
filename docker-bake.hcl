@@ -38,3 +38,25 @@ target "image-basic-all" {
     "linux/arm/v7"
   ]
 }
+
+// this config use by `docker_bake_targets` most of time is `image-just`
+// https://docs.docker.com/build/bake/reference/#target
+// show config as: docker buildx bake --print image-basic
+target "image-just" {
+  inherits = ["docker-metadata-action"]
+  context = "."
+  dockerfile = "build-just.dockerfile"
+}
+
+// must check by parent image support multi-platform
+// doc: https://docs.docker.com/reference/cli/docker/buildx/build/#platform
+// most of can as: linux/amd64 linux/386 linux/arm64/v8 linux/arm/v7 linux/arm/v6 linux/ppc64le linux/s390x
+target "image-just-all" {
+  inherits = ["image-just"]
+  platforms = [
+    "linux/amd64",
+    "linux/386",
+    "linux/arm64/v8",
+    "linux/arm/v7"
+  ]
+}
