@@ -8,18 +8,12 @@
 FROM rust:1.80.1
 
 #USER root
-ARG CARGO_HOME=/usr/local/cargo
 
-# set proxy of rust
-RUN mkdir -p ${CARGO_HOME}
-COPY ./z-MakefileUtils/proxy-rsproxy.toml ${CARGO_HOME}/config
-# set proxy of rustup
-# ARG RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
-# ARG RUSTUP_UPDATE_ROOT=https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
-ARG RUSTUP_DIST_SERVER=https://rsproxy.cn
-ARG RUSTUP_UPDATE_ROOT=https://rsproxy.cn/rustup
-ENV RUSTUP_DIST_SERVER=${RUSTUP_DIST_SERVER}
-ENV RUSTUP_UPDATE_ROOT=${RUSTUP_UPDATE_ROOT}
+# ARG CARGO_HOME=/usr/local/cargo
+# set cargo config
+# RUN mkdir -p ${CARGO_HOME}
+# COPY ./z-MakefileUtils/cargo-config.toml ${CARGO_HOME}/config
+
 
 # add ci env
 ENV CARGO_NET_RETRY=5
