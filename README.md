@@ -25,6 +25,16 @@
 
 ### build kit version
 
+#### just
+
+support [just](https://github.com/casey/just)
+
+| image version | [just](https://crates.io/crates/just) |
+| ------------- | --------- |
+| 1.80.1        | 1.34.0    |
+
+#### cargo-bak
+
 | image version | [cargo-bak](https://crates.io/crates/cargo-bak) |
 | ------------- | --------- |
 | 1.75.0+       | 0.1.5     |
@@ -43,6 +53,18 @@ docker run --rm \
   --name "test-rust-runtime-debian" \
   sinlov/rust-runtime-debian:latest \
   rustup show
+
+# check latest rust version kits env
+docker run --rm \
+  --name "test-rust-runtime-debian" \
+  sinlov/rust-runtime-debian:latest-just \
+  bash -c ' \
+  uname -asrm && \
+  cat /etc/os-release && \
+  gcc --version && \
+  make --version && \
+  just --version && \
+  rustup show '
 
 # check 1.80.1 build env
 docker run --rm \
