@@ -47,14 +47,20 @@ support [just](https://github.com/casey/just)
 ### fast use
 
 ```bash
-# run as cli show latest rust version
+## show latest rust version
+# pull latest image
+docker pull sinlov/rust-runtime-debian:latest
+# then check
 docker run --rm \
   -it \
   --name "test-rust-runtime-debian" \
   sinlov/rust-runtime-debian:latest \
   rustup show
 
-# check latest rust version kits env
+## latest rust version with kits env
+# pull latest image
+docker pull sinlov/rust-runtime-debian:latest-just
+# then check
 docker run --rm \
   --name "test-rust-runtime-debian" \
   sinlov/rust-runtime-debian:latest-just \
