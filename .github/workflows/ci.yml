@@ -46,6 +46,7 @@ jobs:
     needs:
       - version
     uses: ./.github/workflows/docker-buildx-bake-hubdocker-latest.yml
+    if: ${{ github.ref_type != 'tag' }}
     # if: ${{ ( github.event_name == 'push' && github.ref == 'refs/heads/main' ) || github.base_ref == 'main' }}
     with:
       # push_remote_flag: ${{ github.ref == 'refs/heads/main' }}
@@ -60,6 +61,7 @@ jobs:
     needs:
       - version
     uses: ./.github/workflows/docker-buildx-bake-hubdocker-latest.yml
+    if: ${{ github.ref_type != 'tag' }}
     # if: ${{ ( github.event_name == 'push' && github.ref == 'refs/heads/main' ) || github.base_ref == 'main' }}
     with:
       # push_remote_flag: ${{ github.ref == 'refs/heads/main' }}
