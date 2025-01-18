@@ -31,6 +31,7 @@ support [just](https://github.com/casey/just)
 
 | image version | [just](https://crates.io/crates/just) |
 | ------------- | --------- |
+| 1.83.0        | 1.38.0    |
 | 1.82.0        | 1.36.0    |
 | 1.81.0        | 1.35.0    |
 
