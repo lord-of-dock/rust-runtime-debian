@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.84.1](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.84.0...v1.84.1) (2025-02-19)
+
+### 👷‍ Build System
+
+* add docker-build-timeout-minutes to all jobs ([12bc683d](https://github.com/lord-of-dock/rust-runtime-debian/commit/12bc683de23e348e7fbeb6a686d7531597cec248))
+
+* update Rust version to 1.84.1 ([d56dbe3d](https://github.com/lord-of-dock/rust-runtime-debian/commit/d56dbe3dcd71c8e88048bc1724df4ff14e0d29c3)), feat [#45](https://github.com/lord-of-dock/rust-runtime-debian/issues/45)
+
+* update docker bake-action to v6 and improve build file checking ([a99c415f](https://github.com/lord-of-dock/rust-runtime-debian/commit/a99c415f75a76d90e69d228cd955221058a933ec)), feat [#43](https://github.com/lord-of-dock/rust-runtime-debian/issues/43)
+
 ## [1.84.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.83.0...v1.84.0) (2025-01-20)
 
 ### 👷‍ Build System
