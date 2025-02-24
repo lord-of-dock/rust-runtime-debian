@@ -31,8 +31,8 @@ support [just](https://github.com/casey/just)
 
 | image version | [just](https://crates.io/crates/just) |
 | ------------- | --------- |
+| latest        | 1.39.0    |
 | 1.84.1        | 1.39.0    |
-| 1.84.0        | 1.38.0    |
 | 1.83.0        | 1.38.0    |
 | 1.82.0        | 1.36.0    |
 | 1.81.0        | 1.35.0    |
@@ -41,6 +41,7 @@ support [just](https://github.com/casey/just)
 
 | image version | [cargo-bak](https://crates.io/crates/cargo-bak) |
 | ------------- | --------- |
+| latest        | 0.1.5     |
 | 1.75.0+       | 0.1.5     |
 | 1.74.0        | 0.1.4     |
 
@@ -76,10 +77,10 @@ docker run --rm \
   just --version && \
   rustup show '
 
-# check 1.84.1 build env
+# check 1.85.0 build env
 docker run --rm \
   --name "test-rust-runtime-debian" \
-  sinlov/rust-runtime-debian:1.84.1 \
+  sinlov/rust-runtime-debian:1.85.0 \
   bash -c ' \
   uname -asrm && \
   cat /etc/os-release && \
@@ -98,7 +99,7 @@ docker run --rm \
 
 ### each version
 
-- rust version `1.84.1`
+- rust version `1.85.0`
   - change in `Makefile`
   - change in `Dockerfile` or `build.dockerfile`
 
