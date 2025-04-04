@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.85.1](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.85.0...v1.85.1) (2025-04-04)
+
+### 📝 Documentation
+
+* update just version in README and add new row ([3deefcfa](https://github.com/lord-of-dock/rust-runtime-debian/commit/3deefcfaf7e9b753ea36e0cc5f21f410073aa1f5))
+
+### 👷‍ Build System
+
+* update Rust version to 1.85.1 ([a9638d14](https://github.com/lord-of-dock/rust-runtime-debian/commit/a9638d14820bd74e94b215e59bad0f480e052ad5))
+
 ## [1.85.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.84.1...v1.85.0) (2025-02-25)
 
 ### ✨ Features
