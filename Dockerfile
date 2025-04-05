@@ -5,7 +5,7 @@
 # maintainer="https://github.com/lord-of-dock/rust-runtime-debian"
 
 # https://hub.docker.com/_/rust/tags?page=1
-FROM rust:1.85.1
+FROM rust:1.86.0
 
 #USER root
 
