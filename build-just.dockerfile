@@ -28,7 +28,6 @@ RUN export CARGO_HTTP_DEBUG=true \
   CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse && \
   rustup component add rustfmt && \
   rustup component add clippy && \
-  rustup component add rls && \
   rustup component add rust-analysis && \
   rustup component add rust-src && \
   cargo install --all-features --version 0.1.5 cargo-bak && \
