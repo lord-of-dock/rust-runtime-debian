@@ -21,7 +21,7 @@
   - [clippy](https://doc.rust-lang.org/clippy/)
   - [rust-analysis](https://github.com/rust-lang/rust-analyzer)
   - [rust-src](https://github.com/rust-lang/rust)
-  - ~~[rls](https://github.com/rust-lang/rls)~~ remove at 1.87.0
+  - ~~[rls](https://github.com/rust-lang/rls)~~ removed after image:1.87.0
 
 ### build kit version
 
