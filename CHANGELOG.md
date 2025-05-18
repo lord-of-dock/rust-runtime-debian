@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.87.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.86.0...v1.87.0) (2025-05-19)
+
+### ✨ Features
+
+* remove rls component from rust installation ([c9286eae](https://github.com/lord-of-dock/rust-runtime-debian/commit/c9286eae3eb166a8a31f3a3ca7c3f4191821b00a))
+
+* update Rust version to 1.87.0 ([47edccc9](https://github.com/lord-of-dock/rust-runtime-debian/commit/47edccc9d83ba7110578080b51f6494ef7954d27))
+
+### 📝 Documentation
+
+* update rls removal note in README ([c06b2bae](https://github.com/lord-of-dock/rust-runtime-debian/commit/c06b2bae53596edea6384072a3f167a14cb2b6a4))
+
+### 👷‍ Build System
+
+* remove rls component installation ([0186cfa7](https://github.com/lord-of-dock/rust-runtime-debian/commit/0186cfa70915af73b0e9b0c6bf2aea72f02836c1))
+
 ## [1.86.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/1.85.1...v1.86.0) (2025-04-06)
 
 ### ✨ Features
