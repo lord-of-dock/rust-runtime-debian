@@ -22,6 +22,8 @@
   - [rust-analysis](https://github.com/rust-lang/rust-analyzer)
   - [rust-src](https://github.com/rust-lang/rust)
   - ~~[rls](https://github.com/rust-lang/rls)~~ removed after image:1.87.0
+- environment
+  - [CARGO_CACHE_AUTO_CLEAN_FREQUENCY](https://doc.rust-lang.org/stable/cargo/reference/config.html#cacheauto-clean-frequency) `never` after image:1.88.0
 
 ### build kit version
 
@@ -80,10 +82,10 @@ docker run --rm \
   just --version && \
   rustup show '
 
-# check 1.87.0 build env
+# check 1.88.0 build env
 docker run --rm \
   --name "test-rust-runtime-debian" \
-  sinlov/rust-runtime-debian:1.87.0 \
+  sinlov/rust-runtime-debian:1.88.0 \
   bash -c ' \
   uname -asrm && \
   cat /etc/os-release && \
@@ -102,7 +104,7 @@ docker run --rm \
 
 ### each version
 
-- rust version `1.87.0`
+- rust version `1.88.0`
   - change in `Makefile`
   - change in `Dockerfile` or `build.dockerfile`
 
