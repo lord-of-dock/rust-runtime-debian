@@ -5,7 +5,7 @@
 # maintainer="https://github.com/lord-of-dock/rust-runtime-debian"
 
 # https://hub.docker.com/_/rust/tags?page=1
-FROM rust:1.87.0
+FROM rust:1.88.0
 
 #USER root
 ARG CARGO_HOME=/usr/local/cargo
@@ -27,6 +27,8 @@ ENV CARGO_HTTP_TIMEOUT=300
 ENV CARGO_HTTP_MULTIPLEXING=false
 ENV CARGO_TERM_PROGRESS_WHEN=never
 ENV CARGO_NET_GIT_FETCH_WITH_CLI=true
+# https://doc.rust-lang.org/stable/cargo/reference/config.html#cacheauto-clean-frequency
+ENV CARGO_CACHE_AUTO_CLEAN_FREQUENCY=never
 ENV CI=1
 
 # add component
