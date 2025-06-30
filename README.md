@@ -12,7 +12,7 @@
 
 - docker hub see [https://hub.docker.com/r/sinlov/rust-runtime-debian](https://hub.docker.com/r/sinlov/rust-runtime-debian)
 
-## for
+## feature
 
 - rust build in docker with debian
 - [![](https://img.shields.io/docker/v/_/rust/latest?label=rust&logo=rust&style=social)](https://hub.docker.com/_/rust/tags) latest semver version with `latest`
