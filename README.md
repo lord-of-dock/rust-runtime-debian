@@ -33,7 +33,8 @@ support [just](https://github.com/casey/just)
 
 | image version | [just](https://crates.io/crates/just) |
 | ------------- | --------- |
-| image:latest        | 1.40.0    |
+| image:latest        | 1.42.4    |
+| image:1.89.0        | 1.42.4    |
 | image:1.86.0        | 1.40.0    |
 | image:1.85.1        | 1.40.0    |
 | image:1.85.0        | 1.39.0    |
@@ -82,10 +83,10 @@ docker run --rm \
   just --version && \
   rustup show '
 
-# check 1.89.0 build env
+# check 1.90.0 build env
 docker run --rm \
   --name "test-rust-runtime-debian" \
-  sinlov/rust-runtime-debian:1.89.0 \
+  sinlov/rust-runtime-debian:1.90.0 \
   bash -c ' \
   uname -asrm && \
   cat /etc/os-release && \
@@ -104,7 +105,7 @@ docker run --rm \
 
 ### each version
 
-- rust version `1.89.0`
+- rust version `1.90.0`
   - change in `Makefile`
   - change in `Dockerfile` or `build.dockerfile`
 
