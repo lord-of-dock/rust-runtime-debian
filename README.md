@@ -33,7 +33,8 @@ support [just](https://github.com/casey/just)
 
 | image version | [just](https://crates.io/crates/just) |
 | ------------- | --------- |
-| image:latest        | 1.42.4    |
+| image:latest        | 1.45.0    |
+| image:1.90.0        | 1.45.0    |
 | image:1.89.0        | 1.42.4    |
 | image:1.86.0        | 1.40.0    |
 | image:1.85.1        | 1.40.0    |
