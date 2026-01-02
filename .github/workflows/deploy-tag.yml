@@ -86,6 +86,7 @@ jobs:
       - name: Docker Hub Description
         # https://github.com/marketplace/actions/docker-hub-description
         uses: peter-evans/dockerhub-description@v5
+        if: ${{ ! inputs.dry_run }}
         with:
           username: ${{ vars.ENV_DOCKERHUB_OWNER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
