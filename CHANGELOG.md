@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.91.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.90.0...v1.91.0) (2026-01-02)
+
+### ✨ Features
+
+* add Docker Hub description update path and improve workflow steps ([9c96fee0](https://github.com/lord-of-dock/rust-runtime-debian/commit/9c96fee085fa099c43e259e9a903f0bf0b8ede7c))
+
+* update kit just version in README.md ([f5cf7a5a](https://github.com/lord-of-dock/rust-runtime-debian/commit/f5cf7a5a093dcc28ce6599fd97741ca463b1efae))
+
+* update Dockerfile and related files for Rust 1.91.0 ([c630ae55](https://github.com/lord-of-dock/rust-runtime-debian/commit/c630ae55debe6db5897f2e85e93fd7d8249a2583))
+
+### 👷‍ Build System
+
+* add condition to Docker Hub description step ([94c624b9](https://github.com/lord-of-dock/rust-runtime-debian/commit/94c624b9168b10da171a912433e590bf337f6562))
+
 ## [1.90.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.89.0...v1.90.0) (2025-12-29)
 
 ### ✨ Features
