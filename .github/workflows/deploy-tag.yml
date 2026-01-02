@@ -29,7 +29,13 @@ on:
         required: false
         type: string
 
-permissions:
+      dockerhub_description_path:
+        description: 'dockerhub description update path'
+        default: 'README.md'
+        required: false
+        type: string
+
+permissions: # https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#permissions
   contents: write
   discussions: write
 
@@ -38,7 +44,7 @@ jobs:
     name: repo-release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Check deploy inputs
         run: |
@@ -47,7 +53,7 @@ jobs:
           echo "download_artifact_name: ${{inputs.download_artifact_name}}"
 
       - name: Download Artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         if: ${{ inputs.download_artifact_name != null }}
         with:
           path: ${{ github.workspace }}/dist
@@ -60,7 +66,7 @@ jobs:
         run: |
           ls -R ${{ github.workspace }}/dist
 
-      - uses: softprops/action-gh-release@master
+      - uses: softprops/action-gh-release@v2
         name: Create Release
         if: ${{ ! inputs.dry_run }}
         with:
@@ -76,3 +82,13 @@ jobs:
           #   **/*.zip
           #   **/*.tar.gz
           #   **/*.sha256
+
+      - name: Docker Hub Description
+        # https://github.com/marketplace/actions/docker-hub-description
+        uses: peter-evans/dockerhub-description@v5
+        if: ${{ ! inputs.dry_run }}
+        with:
+          username: ${{ vars.ENV_DOCKERHUB_OWNER }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: ${{ vars.ENV_DOCKERHUB_OWNER }}/${{ vars.ENV_DOCKERHUB_REPO_NAME }}
+          readme-filepath: ${{ inputs.dockerhub_description_path }}

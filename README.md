@@ -1,14 +1,15 @@
+# rust-runtime-debian
+
+[![docker version semver](https://img.shields.io/docker/v/sinlov/rust-runtime-debian?sort=semver)](https://hub.docker.com/r/sinlov/rust-runtime-debian)
+[![docker image size](https://img.shields.io/docker/image-size/sinlov/rust-runtime-debian)](https://hub.docker.com/r/sinlov/rust-runtime-debian)
+[![docker pulls](https://img.shields.io/docker/pulls/sinlov/rust-runtime-debian)](https://hub.docker.com/r/sinlov/rust-runtime-debian/tags?page=1&ordering=last_updated)
+
 [![ci](https://github.com/lord-of-dock/rust-runtime-debian/actions/workflows/ci.yml/badge.svg)](https://github.com/lord-of-dock/rust-runtime-debian/actions/workflows/ci.yml)
 
 [![GitHub license](https://img.shields.io/github/license/lord-of-dock/rust-runtime-debian)](https://github.com/lord-of-dock/rust-runtime-debian)
 [![GitHub latest SemVer tag)](https://img.shields.io/github/v/tag/lord-of-dock/rust-runtime-debian)](https://github.com/lord-of-dock/rust-runtime-debian/tags)
 [![GitHub release)](https://img.shields.io/github/v/release/lord-of-dock/rust-runtime-debian)](https://github.com/lord-of-dock/rust-runtime-debian/releases)
 
-# rust-runtime-debian
-
-[![docker version semver](https://img.shields.io/docker/v/sinlov/rust-runtime-debian?sort=semver)](https://hub.docker.com/r/sinlov/rust-runtime-debian)
-[![docker image size](https://img.shields.io/docker/image-size/sinlov/rust-runtime-debian)](https://hub.docker.com/r/sinlov/rust-runtime-debian)
-[![docker pulls](https://img.shields.io/docker/pulls/sinlov/rust-runtime-debian)](https://hub.docker.com/r/sinlov/rust-runtime-debian/tags?page=1&ordering=last_updated)
 
 - docker hub see [https://hub.docker.com/r/sinlov/rust-runtime-debian](https://hub.docker.com/r/sinlov/rust-runtime-debian)
 
@@ -96,59 +97,13 @@ docker run --rm \
   rustup show '
 ```
 
-# dev
-
-## source repo
-
-[https://github.com/lord-of-dock/rust-runtime-debian](https://github.com/lord-of-dock/rust-runtime-debian)
-
-## source usage
-
-### each version
-
-- rust version `1.91.0`
-  - change in `Makefile`
-  - change in `Dockerfile` or `build.dockerfile`
-
-release at:
-
-- rust official latest version [![](https://img.shields.io/docker/v/_/rust/latest?label=rust&logo=rust&style=social)](https://hub.docker.com/_/rust/tags)
-- [https://blog.rust-lang.org/releases/](https://blog.rust-lang.org/releases/)
-- release manifests [https://static.rust-lang.org/manifests.txt](https://static.rust-lang.org/manifests.txt)
-- Rust Changelogs [https://releases.rs/](https://releases.rs/)
-
-### dev mode
-
-```bash
-# see help
-$ make help
-# see or check build env
-$ make env
-
-# fast build
-$ make all
-# clean build
-$ make clean
-
-# check env
-$ make dockerEnv
-
-# change build.dockerfile
-# then test image
-$ make dockerTestRestartLatest
-# remove build image
-$ make clean
-```
-
-then change github workflows config to use
-
 ## Contributing
 
-[![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-v1.4-ff69b4.svg)](.github/CONTRIBUTING_DOC/CODE_OF_CONDUCT.md)
+[![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-v1.4-ff69b4.svg)](https://github.com/lord-of-dock/rust-runtime-debian/blob/main/.github/CONTRIBUTING_DOC/CODE_OF_CONDUCT.md)
 [![GitHub contributors](https://img.shields.io/github/contributors/lord-of-dock/rust-runtime-debian)](https://github.com/lord-of-dock/rust-runtime-debian/graphs/contributors)
 
 We welcome community contributions to this project.
 
-Please read [Contributor Guide](.github/CONTRIBUTING_DOC/CONTRIBUTING.md) for more information on how to get started.
+Please read [Contributor Guide](https://github.com/lord-of-dock/rust-runtime-debian/blob/main/.github/CONTRIBUTING_DOC/CONTRIBUTING.md) for more information on how to get started.
 
-请阅读有关 [贡献者指南](.github/CONTRIBUTING_DOC/zh-CN/CONTRIBUTING.md) 以获取更多如何入门的信息
+请阅读有关 [贡献者指南](https://github.com/lord-of-dock/rust-runtime-debian/blob/main/.github/CONTRIBUTING_DOC/zh-CN/CONTRIBUTING.md) 以获取更多如何入门的信息
