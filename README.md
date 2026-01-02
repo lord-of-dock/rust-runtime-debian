@@ -85,10 +85,10 @@ docker run --rm \
   just --version && \
   rustup show '
 
-# check 1.91.0 build env
+# check 1.92.0 build env
 docker run --rm \
   --name "test-rust-runtime-debian" \
-  sinlov/rust-runtime-debian:1.91.0 \
+  sinlov/rust-runtime-debian:1.92.0 \
   bash -c ' \
   uname -asrm && \
   cat /etc/os-release && \
