@@ -8,7 +8,7 @@
 
 ### each version
 
-- rust version `1.92.0`
+- rust version `1.93.0`
   - change in `Makefile`
   - change in `Dockerfile` or `build.dockerfile`
 
@@ -18,6 +18,8 @@ release at:
 - [https://blog.rust-lang.org/releases/](https://blog.rust-lang.org/releases/)
 - release manifests [https://static.rust-lang.org/manifests.txt](https://static.rust-lang.org/manifests.txt)
 - Rust Changelogs [https://releases.rs/](https://releases.rs/)
+
+- wanning each `image digest from bake output` will append git commit, will let
 
 ### dev mode
 
