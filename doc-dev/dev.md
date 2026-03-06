@@ -19,6 +19,8 @@ release at:
 - release manifests [https://static.rust-lang.org/manifests.txt](https://static.rust-lang.org/manifests.txt)
 - Rust Changelogs [https://releases.rs/](https://releases.rs/)
 
+- wanning each `image digest from bake output` will append git commit, will let
+
 ### dev mode
 
 ```bash
