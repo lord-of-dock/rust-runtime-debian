@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.93.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.92.0...v1.93.0) (2026-03-07)
+
+### ✨ Features
+
+* enhance meta bake definition file processing ([12dee4dd](https://github.com/lord-of-dock/rust-runtime-debian/commit/12dee4dd81ea387be14975ae86bebb016ebf5ce6))
+
+* update Rust version to 1.93.0 ([066dcc74](https://github.com/lord-of-dock/rust-runtime-debian/commit/066dcc74ee1b615d01d25dd7bdfe532b738e5e1c))
+
+### 📝 Documentation
+
+* update dev documentation to clarify image digest behavior ([71d46702](https://github.com/lord-of-dock/rust-runtime-debian/commit/71d467022a1816ef9b3282c06658286d398fa3e1))
+
 ## [1.92.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.91.0...v1.92.0) (2026-01-04)
 
 ### ✨ Features
