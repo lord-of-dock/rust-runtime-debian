@@ -8,7 +8,7 @@
 
 ### each version
 
-- rust version `1.94.0`
+- rust version `1.94.1`
   - change in `Makefile`
   - change in `Dockerfile` or `build.dockerfile`
 
