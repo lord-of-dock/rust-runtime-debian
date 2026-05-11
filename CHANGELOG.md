@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.94.1](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.94.0...v1.94.1) (2026-05-11)
+
+### 👷‍ Build System
+
+* update Rust version to 1.94.1 ([d5585823](https://github.com/lord-of-dock/rust-runtime-debian/commit/d5585823d57e1f63e76d9ac1c3f20e35a541f550))
+
 ## [1.94.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.93.1...v1.94.0) (2026-03-08)
 
 ### ✨ Features
