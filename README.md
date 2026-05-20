@@ -34,7 +34,8 @@ support [just](https://github.com/casey/just)
 
 | image version | [just](https://crates.io/crates/just) |
 | ------------- | --------- |
-| image:latest        | 1.46.0    |
+| image:latest        | 1.51.0    |
+| image:1.94.1        | 1.51.0    |
 | image:1.91.0        | 1.46.0    |
 | image:1.90.0        | 1.45.0    |
 | image:1.89.0        | 1.42.4    |
@@ -90,6 +91,16 @@ docker run --rm \
 docker run --rm \
   --name "test-rust-runtime-debian" \
   sinlov/rust-runtime-debian:1.95.0 \
+  bash -c ' \
+  uname -asrm && \
+  cat /etc/os-release && \
+  make --version && \
+  gcc --version && \
+  rustup show '
+
+docker run --rm \
+  --name "test-rust-runtime-debian" \
+  sinlov/rust-runtime-debian:1.95.0-just \
   bash -c ' \
   uname -asrm && \
   cat /etc/os-release && \
