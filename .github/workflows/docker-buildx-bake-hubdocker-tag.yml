@@ -68,7 +68,7 @@ jobs:
 
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       -
         name: Create matrix
         id: platforms
@@ -97,7 +97,7 @@ jobs:
           echo "PLATFORM_PAIR=${platform//\//-}" >> $GITHUB_ENV
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       -
         name: Docker meta
         id: meta
@@ -130,7 +130,7 @@ jobs:
 
       -
         name: Upload meta bake definition
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: ${{ inputs.push_remote_flag }}
         with:
           name: bake-tag-meta-${{ github.run_id }}-${{ github.run_attempt }}-${{ inputs.docker_bake_targets }}-${{ env.PLATFORM_PAIR }}
@@ -191,9 +191,13 @@ jobs:
         id: bake-output-container-image-digest
         env:
           BAKE_METADATA: ${{ steps.bake.outputs.metadata }}
-          BAKE_TARGET: ${{ inputs.docker_bake_targets }}
         run: |
-          echo "digest=$(echo "$BAKE_METADATA" | jq -cr '.["'"$BAKE_TARGET"'"]["containerimage.digest"]')" >>$GITHUB_OUTPUT
+          digest="$(jq -cr --arg target "${{ inputs.docker_bake_targets }}" '.[$target]["containerimage.digest"] // empty' <<<"$BAKE_METADATA")"
+          if [ -z "$digest" ] || [ "$digest" = "null" ]; then
+            echo "failed to extract container image digest from bake output metadata"
+            exit 1
+          fi
+          echo "digest=$digest" >>$GITHUB_OUTPUT
 
       -
         name: Export digest
@@ -205,7 +209,7 @@ jobs:
 
       -
         name: Upload digest
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: ${{ inputs.push_remote_flag }}
         with:
           name: digests-tag-${{ github.run_id }}-${{ github.run_attempt }}-${{ inputs.docker_bake_targets }}-${{ env.PLATFORM_PAIR }}
@@ -236,7 +240,7 @@ jobs:
 
       -
         name: Download meta bake definition
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           # name: bake-meta
           ## https://github.com/actions/download-artifact/tree/v4?tab=readme-ov-file#breaking-changes
@@ -246,7 +250,7 @@ jobs:
 
       -
         name: Download digests
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           # name: digests
           ## https://github.com/actions/download-artifact/tree/v4?tab=readme-ov-file#breaking-changes
