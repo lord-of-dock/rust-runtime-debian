@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.96.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.95.0...v1.96.0) (2026-10-27)
+
+### 🐛 Bug Fixes
+
+* update cache-to configuration in Docker workflows ([1acdac76](https://github.com/lord-of-dock/rust-runtime-debian/commit/1acdac7681a9fdaa69baaf2d6dce555d6ddaa093))
+
+* update GitHub Actions to use latest versions of checkout and artifact actions ([487f1a44](https://github.com/lord-of-dock/rust-runtime-debian/commit/487f1a44658843eb2b08a6904c0b426fd835f86b))
+
+* 🐛 extract bake digest via env to avoid shell injection ([ea8470ec](https://github.com/lord-of-dock/rust-runtime-debian/commit/ea8470ecf7eb75d8327c876234fa43921ef6b708))
+
+### ✨ Features
+
+* ✨ bump rust to 1.96.0 ([67242f50](https://github.com/lord-of-dock/rust-runtime-debian/commit/67242f50f486ef7cfab95684316d2a192df31251))
+
+### 📝 Documentation
+
+* add build kit os version and just image versions ([46308b4c](https://github.com/lord-of-dock/rust-runtime-debian/commit/46308b4c8a4000b4b935238636b1b8e7f8041ecd))
+
+### 👷‍ Build System
+
+* bump convention-change/conventional-version-check ([1be9a1c9](https://github.com/lord-of-dock/rust-runtime-debian/commit/1be9a1c93a1ef9a98e7888109eba1e971e5523ee))
+
 ## [1.95.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.94.1...v1.95.0) (2026-05-21)
 
 ### ✨ Features
