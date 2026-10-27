@@ -4,7 +4,7 @@ mode: "subagent"
 permission:
   edit: "deny"
   bash: "ask"
-model: "deepseek/deepseek-v4-pro"
+model: "deepseek/deepseek-flash"
 temperature: 0.3
 ---
 

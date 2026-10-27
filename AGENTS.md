@@ -10,13 +10,13 @@ A **Docker base image** project (`sinlov/rust-runtime-debian`) that repackages t
 
 The Rust version is the project version. A bump must touch **all four** in lockstep:
 
-- `package.json` `version` (e.g. `1.96.0`)
+- `package.json` `version` (e.g. `1.97.0`)
 - `Dockerfile` `FROM rust:<version>`
 - `build.dockerfile` `FROM rust:<version>` (and `build-just.dockerfile`)
 - `Makefile` `ROOT_PARENT_SWITCH_TAG`
 - README.md version tables (just + cargo-bak rows) — CI ignores README-only changes, but keep them consistent
 
-Tag prefix is `v` (see `.versionrc`), so a release tag looks like `v1.96.0`.
+Tag prefix is `v` (see `.versionrc`), so a release tag looks like `v1.97.0`.
 
 ## Three Dockerfiles — distinct roles, do not conflate
 
@@ -39,7 +39,7 @@ The Makefile `include`s `z-MakefileUtils/MakeImage.mk` (a shared, reusable snipp
 - `make dockerTestRestartLatest` — rebuild + rerun the local test image
 - `make dockerBeforePush` — build + tag the production `Dockerfile` (does not push)
 
-`ENV_DIST_VERSION` (default `latest`) controls the tag; override on the command line: `make dockerTestRestartLatest ENV_DIST_VERSION=1.96.0`.
+`ENV_DIST_VERSION` (default `latest`) controls the tag; override on the command line: `make dockerTestRestartLatest ENV_DIST_VERSION=1.97.0`.
 
 ## Docker bake (multi-platform CI builds)
 
