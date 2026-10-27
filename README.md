@@ -28,13 +28,22 @@
 
 ### build kit version
 
+#### build os info
+
+| image version | os | version codename | rustc host |
+| ------------- | --------- | --------- | --------- |
+| image:latest        | debian:13    | trixie | x86_64-unknown-linux-gnu |
+| image:1.89.0        | debian:13    | trixie | x86_64-unknown-linux-gnu |
+| image:1.81.0        | debian:12    | bookworm | x86_64-unknown-linux-gnu |
+
 #### just
 
 support [just](https://github.com/casey/just)
 
 | image version | [just](https://crates.io/crates/just) |
 | ------------- | --------- |
-| image:latest        | 1.51.0    |
+| image:latest        | 1.59.0    |
+| image:1.96.0        | 1.59.0    |
 | image:1.94.1        | 1.51.0    |
 | image:1.91.0        | 1.46.0    |
 | image:1.90.0        | 1.45.0    |
