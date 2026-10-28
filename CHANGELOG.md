@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.97.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.96.0...v1.97.0) (2026-10-28)
+
+### ✨ Features
+
+* update Rust version to 1.97.0 ([7b4bd810](https://github.com/lord-of-dock/rust-runtime-debian/commit/7b4bd810151c3c0169c47e41d291b3e6bf7fc57d))
+
+### 👷‍ Build System
+
+* bump docker/login-action from 3 to 4 ([07204e55](https://github.com/lord-of-dock/rust-runtime-debian/commit/07204e55f25192238d93e479ae91959d8cf0fc8f))
+
+* bump docker/bake-action from 6 to 7 ([9c1b7125](https://github.com/lord-of-dock/rust-runtime-debian/commit/9c1b7125523e12ce463b8c7bd6fc44d4f2d43bed))
+
+* bump docker/setup-buildx-action from 3 to 4 ([c7fe1bd5](https://github.com/lord-of-dock/rust-runtime-debian/commit/c7fe1bd5e8985c3bdddb7488671915d828c5a05a))
+
+* bump docker/metadata-action from 5 to 6 ([77faed94](https://github.com/lord-of-dock/rust-runtime-debian/commit/77faed94301111163092de13878b0337f7a9bf2c))
+
+* bump dependabot/fetch-metadata from 2 to 3 ([a7632f40](https://github.com/lord-of-dock/rust-runtime-debian/commit/a7632f40018984ca044e892517cb6aa329d24239))
+
+* bump docker/setup-qemu-action from 3 to 4 ([97853439](https://github.com/lord-of-dock/rust-runtime-debian/commit/97853439eac4f8c05f659606fedda9f67facd8a2))
+
 ## [1.96.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.95.0...v1.96.0) (2026-10-27)
 
 ### 🐛 Bug Fixes
