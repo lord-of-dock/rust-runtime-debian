@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.97.1](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.97.0...v1.97.1) (2026-10-29)
+
+### 👷‍ Build System
+
+* update push_remote_flag condition for feature branches ([63682429](https://github.com/lord-of-dock/rust-runtime-debian/commit/63682429f6c2c05f72e162026c7249fa405bd929))
+
+* bump Rust version to 1.97.1 ([dfe470d8](https://github.com/lord-of-dock/rust-runtime-debian/commit/dfe470d8ba96acaad8b32a668de90010b413c44d))
+
 ## [1.97.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.96.0...v1.97.0) (2026-10-28)
 
 ### ✨ Features
