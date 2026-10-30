@@ -111,7 +111,7 @@ jobs:
             type=raw,value=latest,enable=true
           flavor: |
             latest=auto
-            suffix=${{ inputs.docker-metadata-flavor-suffix }}
+            suffix=${{ inputs.docker-metadata-flavor-suffix }},onlatest=true
 
       -
         name: Rename meta bake definition file
@@ -222,8 +222,10 @@ jobs:
       -
         name: check temp config files
         run: |
-          ls -al ${{ runner.temp }}/${{ inputs.docker_bake_targets}}
-          ls -al ${{ runner.temp }}/${{ inputs.docker_bake_targets}}/digests/
+          echo "Attempted tags:"
+          jq -r '.target."docker-metadata-action".tags[]' "${{ runner.temp }}/${{ inputs.docker_bake_targets }}/bake-meta.json"
+          ls -al ${{ runner.temp }}/${{ inputs.docker_bake_targets }}
+          ls -al ${{ runner.temp }}/${{ inputs.docker_bake_targets }}/digests/
 
 
   merge:
@@ -262,8 +264,10 @@ jobs:
       -
         name: check temp config files
         run: |
-          ls -al ${{ runner.temp }}/${{ inputs.docker_bake_targets}}
-          ls -al ${{ runner.temp }}/${{ inputs.docker_bake_targets}}/digests/
+          echo "Attempted tags:"
+          jq -r '.target."docker-metadata-action".tags[]' "${{ runner.temp }}/${{ inputs.docker_bake_targets }}/bake-meta.json"
+          ls -al ${{ runner.temp }}/${{ inputs.docker_bake_targets }}
+          ls -al ${{ runner.temp }}/${{ inputs.docker_bake_targets }}/digests/
 
       -
         name: Set up Docker Buildx

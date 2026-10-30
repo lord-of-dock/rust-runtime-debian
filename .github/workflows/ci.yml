@@ -52,6 +52,7 @@ jobs:
     with:
       docker-build-timeout-minutes: 60
       # push_remote_flag: ${{ github.ref == 'refs/heads/main' }}
+      # push_remote_flag: ${{ github.event.pull_request.merged == true }}
       push_remote_flag: ${{ github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'feat-') }}
       docker_bake_targets: 'image-basic'
       docker-metadata-flavor-suffix: '' # default is '', can add as: -alpine -debian
@@ -68,6 +69,7 @@ jobs:
     with:
       docker-build-timeout-minutes: 60
       # push_remote_flag: ${{ github.ref == 'refs/heads/main' }}
+      # push_remote_flag: ${{ github.event.pull_request.merged == true }}
       push_remote_flag: ${{ github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'feat-') }}
       docker_bake_targets: 'image-just'
       docker-metadata-flavor-suffix: '-just' # default is '', can add as: -alpine -debian
