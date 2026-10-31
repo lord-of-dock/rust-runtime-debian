@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.98.1](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.98.0...v1.98.1) (2026-10-31)
+
+### 👷‍ Build System
+
+* bump version to 1.98.1 ([93c3653a](https://github.com/lord-of-dock/rust-runtime-debian/commit/93c3653ad7f1ea0836e3bfc6cd88598bdd6cf26f))
+
 ## [1.98.0](https://github.com/lord-of-dock/rust-runtime-debian/compare/v1.97.1...v1.98.0) (2026-10-30)
 
 ### 👷‍ Build System
