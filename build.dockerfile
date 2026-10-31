@@ -5,7 +5,7 @@
 # maintainer="https://github.com/lord-of-dock/rust-runtime-debian"
 
 # https://hub.docker.com/_/rust/tags?page=1
-FROM rust:1.98.1
+FROM rust:1.99.0
 
 #USER root
 ARG CARGO_HOME=/usr/local/cargo
